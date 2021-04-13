@@ -1,0 +1,111 @@
+.App {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #dadbd3;
+}
+.App > .pagination {
+  margin: 10px;
+  width: 20vw;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pagination > .page-link {
+  width: 20vw;
+  height: 5vh;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px black;
+  border-radius: 4px;
+  background-color: lightcoral;
+  outline-color: black;
+}
+.page-link:hover {
+  background-color: lightsalmon;
+}
+.App-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ededed;
+  margin-top: -50px;
+  height: 90vh;
+  width: 90vw;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  overflow-x: scroll;
+  margin-left: 15px;
+}
+.Issuelist {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.Issuelist > .Listitem {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+.Listitem > .Item {
+  background-color: #ededed;
+
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Item > .Item-heading {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+}
+.Item-heading > .issue-list {
+  display: flex;
+  justify-content: start;
+  font-size: small;
+}
+.issue-list > .issue {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: auto;
+  height: auto;
+  padding: -10px;
+  border-color: orange;
+  border-style: solid;
+  border-width: 2px;
+}
+.Item > .item-details {
+  display: flex;
+  justify-content: start;
+  font-display: auto;
+}
+.item-details > .details {
+  display: flex;
+  justify-content: space-around;
+  font-display: auto;
+  margin: 5px;
+}
+.item-details > .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icons > .badge {
+  position: relative;
+  top: -15px;
+  right: 10px;
+  width: 15px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
